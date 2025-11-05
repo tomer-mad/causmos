@@ -67,7 +67,7 @@ app = Flask(__name__)
 app.config['SESSION_PERMANENT'] = True
 app.config['PERMANENT_SESSION_LIFETIME'] = timedelta(hours=2)
 app.secret_key = get_secret('flask_secret_key')
-PROJECT_ID = '' #can set for local testing
+PROJECT_ID = 'madgrowth-data' #can set for local testing
 
 
 def is_loopback(host) -> bool:
