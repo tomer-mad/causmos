@@ -26,7 +26,7 @@ PROJECT_TITLE='Causal Impact Insights'
 USER_EMAIL=$(gcloud config get-value account 2> /dev/null)
 PROJECT_NUMBER=$(gcloud projects describe $PROJECT_ID | grep projectNumber | sed "s/.* '//;s/'//g")
 SERVICE_ACCOUNT=$PROJECT_ID@appspot.gserviceaccount.com
-GAE_LOCATION=europe-west
+GAE_LOCATION=US
 FIRESTORE_SA='firebase-service-account@firebase-sa-management.iam.gserviceaccount.com'
 
 # check the billing
